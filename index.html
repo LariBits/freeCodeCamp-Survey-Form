@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulário de Pesquisa freeCodeCamp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Formulário de pesquisa do freeCodeCamp</h1>
+  <p>Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+
+  <div class="formulario">
+    <form>
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" min="0" required />
+      </div>
+
+      <div class="form-group">
+        <label for="status">Qual é a sua situação atual?</label>
+        <select id="status" name="status" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="estudante">Estudante</option>
+          <option value="emprego">Emprego em tempo integral</option>
+          <option value="aprendiz">Aprendiz em tempo integral</option>
+          <option value="nao_dizer">Prefiro não dizer</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Você recomendaria o freeCodeCamp a um amigo?</legend>
+        <label>
+          <input type="radio" id="option1" name="selection" value="opcao1" required />
+          Definitivamente
+        </label>
+        <label>
+          <input type="radio" id="option2" name="selection" value="opcao2" />
+          Talvez
+        </label>
+        <label>
+          <input type="radio" id="option3" name="selection" value="opcao3" />
+          Não
+        </label>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="status-fav">Qual é o seu recurso favorito do freeCodeCamp?</label>
+        <select id="status-fav" name="status-fav" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="desafios">Desafios</option>
+          <option value="projetos">Projetos</option>
+          <option value="comunidade">Comunidade</option>
+          <option value="codigo_aberto">Código aberto</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <fieldset class="form-group">
+        <legend>
+          Quais recursos você gostaria de ver melhorados? (Marque todas as opções aplicáveis)
+        </legend>
+        <label><input type="checkbox" id="frontend" name="melhoria" value="Projetos Front-end" /> Projetos
+          Front-end</label>
+        <label><input type="checkbox" id="backend" name="melhoria" value="Projetos de Back-end" /> Projetos
+          de Back-end</label>
+        <label><input type="checkbox" id="visualizacao" name="melhoria" value="Visualização de Dados" /> Visualização
+          de Dados</label>
+        <label><input type="checkbox" id="desafios" name="melhoria" value="Desafios" /> Desafios</label>
+        <label><input type="checkbox" id="comunidade" name="melhoria" value="Comunidade de código aberto" /> Comunidade
+          de código aberto</label>
+        <label><input type="checkbox" id="gitter" name="melhoria" value="Salas de ajuda do Gitter" /> Salas de ajuda do
+          Gitter</label>
+        <label><input type="checkbox" id="videos" name="melhoria" value="Vídeos" /> Vídeos</label>
+        <label><input type="checkbox" id="encontros" name="melhoria" value="Encontros na cidade" /> Encontros na cidade</label>
+        <label><input type="checkbox" id="semana" name="melhoria" value="Semana" /> Semana</label>
+        <label><input type="checkbox" id="forum" name="melhoria" value="Fórum" /> Fórum</label>
+        <label><input type="checkbox" id="cursos" name="melhoria" value="Cursos Adicionais" /> Cursos Adicionais</label>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="comentarios">Comentários ou sugestões:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Digite seus comentários ou sugestões aqui"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
